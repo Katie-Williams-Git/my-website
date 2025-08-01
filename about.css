@@ -1,0 +1,39 @@
+ section#Top {
+     text-align: center;
+     margin-bottom: 2%
+ }
+
+ section#Location {
+     column-count: 2;
+     width: 45%;
+     float: left;
+ }
+
+ section#Expectations {
+     width: 45%;
+     float: right;
+ }
+
+ section#Worship-Service {
+     width: 45%;
+     float: left;
+ }
+
+ section#Clothes {
+     width: 45%;
+     float: right;
+ }
+
+ section#Time {
+     width: 45%;
+     float: left;
+ }
+
+ section#Food {
+     width: 45%;
+     float: right;
+ }
+
+ #Hope {
+    clear: both;
+ }

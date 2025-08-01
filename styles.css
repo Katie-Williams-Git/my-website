@@ -12,6 +12,7 @@ Header {
 Header img {
     block-size: 100px;
     float: left;
+    margin-right: 5%;
 }
 
 /*An ID OR class selector*/
@@ -19,22 +20,26 @@ Header img {
 /*Use at least 2 properties that style fonts*/
 /*Specify colors with RGB values or hex codes*/
 /*Set the color of at least one element*/
-
+header a {
+  color: #fcfcfc;
+}
+header a:visited {
+    color: #fcfcfc;
+}
 .button {
     text-align: center;
     align-items: stretch;
     padding-left: 3%;
     padding-right: 3%;
-    padding-top: 3%;
+    padding-top: 2%;
     background: scroll;
     background-color:rgb(63, 40, 1);
     font-family:'Times New Roman', Times, serif;
 }
 
-/*A combination selector*/
-/*An attribute OR pseudo-class OR a pseudo-element*/
-button:link {
-    color: #ffffff;
+Main {
+    clear: left;
+    margin-top: 2%;
 }
 
 /*Use at least 2 properties that style fonts*/
@@ -46,16 +51,12 @@ Body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgb(219, 201, 142); 
     background-image: linear-gradient(
-        to bottom, rgb(219, 201, 142) 0%, rgb(233, 226, 203) 25%,rgb(233, 226, 203) 80%, rgb(219, 201, 142) 100%);
+        to bottom, rgb(79, 58, 5) 0%, rgb(219, 201, 142) 25%,rgb(233,226,203) 36%, rgb(219, 201, 142) 95%, rgb(79, 58, 5) 100%);
+    border: thick outset #8b4513;
+    border-radius: 10px;
 }   
 
 
-        /* Keeping momentarily in case I want to use this
-    instead.
-    background-image: linear-gradient(
-        to right, rgb(219, 201, 142) 0%, rgb(233, 226, 203) 10%,rgb(233, 226, 203) 80%, rgb(219, 201, 142) 90%
-    );
-    */
 
     /*
     /*
