@@ -1,0 +1,134 @@
+* {
+    margin:0%;
+    padding:0%;
+}
+Header {
+    color: navy;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 100;
+}
+
+/*A relational selector*/
+Header img {
+    block-size: 100px;
+    float: left;
+}
+
+/*An ID OR class selector*/
+/*Use only relative units of measurement*/
+/*Use at least 2 properties that style fonts*/
+/*Specify colors with RGB values or hex codes*/
+/*Set the color of at least one element*/
+
+.button {
+    text-align: center;
+    align-items: stretch;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 3%;
+    background: scroll;
+    background-color:rgb(63, 40, 1);
+    font-family:'Times New Roman', Times, serif;
+}
+
+/*A combination selector*/
+/*An attribute OR pseudo-class OR a pseudo-element*/
+button:link {
+    color: #ffffff;
+}
+
+/*Use at least 2 properties that style fonts*/
+/*Specify colors with RGB values or hex codes*/
+/*Set the color of at least one element*/
+Body {
+    color:rgb(26, 6, 126);
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(219, 201, 142); 
+    background-image: linear-gradient(
+        to bottom, rgb(219, 201, 142) 0%, rgb(233, 226, 203) 25%,rgb(233, 226, 203) 80%, rgb(219, 201, 142) 100%);
+}   
+
+
+        /* Keeping momentarily in case I want to use this
+    instead.
+    background-image: linear-gradient(
+        to right, rgb(219, 201, 142) 0%, rgb(233, 226, 203) 10%,rgb(233, 226, 203) 80%, rgb(219, 201, 142) 90%
+    );
+    */
+
+    /*
+    /*
+    A type selector
+    */
+
+    
+
+
+
+
+
+/*This is how I make comments. 
+Universal Selector
+The asterick format below often works the same as 
+the body element 
+* {
+}
+*/
+
+/* Text adjusters
+you can adjust line height
+line-height: ..px;
+or ..em;
+2em doubles line height
+3em triples line height
+
+font-size: px, em, or %
+
+use em, rem, or a percentage. Don't use px in class
+text-indent: 5em;
+text-align: #(left, center, right, justify)
+text-decoration: line-through; #(makes a strike-through)
+font: italic 200 2em Arial;
+*/
+
+/*Image format
+img {
+float: left;
+margin: right;
+}
+*/
+
+/*ID selector
+to pick just one id out of the html you can assign an ID to the element
+by giving it a unique name in html with id="id_name" and then writing
+#ID_name {}
+*/
+
+/*Class selectors
+format the HTML with class="class_name" and they can all be changed/affected with the 
+class selector marked
+.class_name {this code will affect any HTML tag marked with the class}
+*/
+
+/* 
+rgba can help make trasparent text
+*/
+
+/* Border Styles
+border: [width] [style] [color];
+width: thin, medium, thick, px, em
+styles: dotted, dashed, solid, double, groove, ridge, inset
+outset, and none. Default is none
+color: self-explanitory
+border-side-[property]: (pick left, right, top, bottom etc for side) then give property
+                [width] [style] [color];
+border-radius: px
+*/
+
+/* Background
+background: color url("img/folder_name/pic_name.pic_type") img_alignment
+#(img alignment can have two values like top right center center etc.)
+background: linear-gradient(#(can use ##deg, 0%l-100%r and format is:
+color percentage, color percentage, end with close paren and semi-colon))
+*/
