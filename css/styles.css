@@ -1,0 +1,349 @@
+* {                        
+    margin: 0%;
+    padding: 0%;
+}
+
+Body {
+    color:#000080;
+    font-weight: 900;
+    font-size: 1.15em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(236, 217, 171); 
+    background-image: linear-gradient(
+        to bottom, rgb(231, 205, 146) 0%, rgb(243, 226, 172) 7%,rgb(244, 231, 202) 36%, rgb(244, 231, 202) 95%, rgb(145, 132, 102) 100%);
+    border: thick ridge #8b4513;
+    border-radius: 10px;
+    border-right: 0;
+}   
+
+header {
+    display: grid;
+    grid-template-columns: .5fr 3fr;
+    grid-gap: 16px;
+    grid-template-areas: 
+    "logo POSDA";
+    width: 100%;
+    margin: 2%;
+}
+
+/* For controlling the logo */
+header .container {
+    grid-area: logo;
+    height: 95%;
+    line-height: 25%;
+}
+/* For making the header text scale */
+header .POSDA {
+    grid-area: POSDA;
+    height: 100%;
+    width: 100%;
+    line-height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Separate logo adjustments */
+#logo {
+    max-width: 25%;
+    min-width: 75px;
+    height: auto;
+}
+
+/* CSS for function of the menu */
+#nav_menu ul {
+    list-style-type: none;
+    position: relative;            /*So the submenu can be positioned */
+}
+#nav_menu ul li {
+    float: left;
+}
+
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul ul li {
+    float: none;
+    position: relative;
+}
+
+#nav_menu ul ul li ul {
+    position: absolute;
+    left: 25%;
+    top: 0;
+}
+
+#nav_menu ul li.lastitem ul li ul {
+    left: -100%;
+}
+
+#nav_menu ul li:hover > ul {
+    display: block;
+}
+
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/*CSS for format of menu */
+
+#nav_menu ul {
+    margin: 2%;
+    padding: 0%;
+}
+
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    width: 20%;
+    padding: 1em 1em;
+    text-decoration: none;
+    color: #000080;
+    font-weight: bold;
+}
+
+#nav_menu ul li.lastitem a {
+    width: 100%;
+}
+
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+    font-weight: bolder;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+Main {
+    clear: left;
+    margin-top: 2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section {
+    padding: none;
+}
+
+#mobile_menu { 
+    display: none; 
+}
+
+/* To help the main text be different from the header */
+main {
+    color:#000080;
+    font-weight: 200;
+    font-size: 1.15em;
+    margin: 2%;
+}
+
+/* Spacing to prevent picture overlap */
+main h2 {
+    margin-bottom: 5%;
+}
+
+.imagecontainer {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 100%;
+    margin: 2%;
+    gap: 2%;
+}
+
+/* Rotating the pictures */
+.bodyimg {
+    width: 15%;
+    min-width: 75px;
+    height: auto;
+    transform: rotate(-10deg);
+    object-fit: scale-down;
+}
+
+.textright {
+    flex-grow: 1;
+    font-size: 1em;
+}
+
+/* Second Picture */
+.reverseimagecontainer {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 2%;
+}
+
+.imgright {
+    width: 150%;
+    min-width: 75px;
+    height: auto;
+    transform: rotate(5deg);
+    object-fit: scale-down;
+}
+
+.blocktext {
+    text-align: right;
+    padding: 1%;
+}
+
+.textleft {
+    flex-grow: 1;
+    font-size: 1em;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+.textleft ul {
+    list-style-type: none;
+}
+
+.hover-preview {
+  display: inside;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 20%;
+  height: auto;
+  z-index: 10;
+}
+
+.hover-image-link {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-image-link:hover .hover-preview {
+  display: block;
+}
+
+#centerhope {
+    text-align: center;
+}
+
+@media only screen and (max-width: 2560px) {
+    header img {
+        min-height: 75px;
+
+    }
+    header h1 {
+        font-size: 250%;
+    }
+    #nav_menu {
+        display: contents;
+    }
+    #mobile_menu {
+        display: none;
+    }
+    .slicknav_menu {
+        background-color:rgb(79, 58, 5) !important;
+    }
+}
+
+@media only screen and (max-width: 392px) {
+    header img {
+        min-height: 75px;
+    }
+    header h1 {
+        font-size: 150%;
+    }
+    #nav_menu {
+        display: center;
+    }
+    #mobile_menu {
+        display: block;
+    }
+    .slicknav_menu {
+        background-color:rgb(79, 58, 5) !important;
+    }
+}
+
+
+@media only screen and (max-width: 350px) {
+    header img {
+        min-height: 75px;
+    }
+    header h1 {
+        font-size: 125%;
+    }
+    #nav_menu {
+        display: center;
+    }
+    #mobile_menu {
+        display: block;
+    }
+    .slicknav_menu {
+        background-color:rgb(79, 58, 5) !important;
+    }
+}
+
+
+
+/*This is how I make comments. 
+Universal Selector
+The asterick format below often works the same as 
+the body element 
+* {
+}
+*/
+
+/* Text adjusters
+you can adjust line height
+line-height: ..px;
+or ..em;
+2em doubles line height
+3em triples line height
+
+font-size: px, em, or %
+
+use em, rem, or a percentage. Don't use px in class
+text-indent: 5em;
+text-align: #(left, center, right, justify)
+text-decoration: line-through; #(makes a strike-through)
+font: italic 200 2em Arial;
+*/
+
+/*Image format
+img {
+float: left;
+margin: right;
+}
+*/
+
+/*ID selector
+to pick just one id out of the html you can assign an ID to the element
+by giving it a unique name in html with id="id_name" and then writing
+#id_name {}
+*/
+
+/*Class selectors
+format the HTML with class="class_name" and they can all be changed/affected with the 
+class selector marked
+.class_name {this code will affect any HTML tag marked with the class}
+*/
+
+/* 
+rgba can help make trasparent text
+*/
+
+/* Border Styles
+border: [width] [style] [color];
+width: thin, medium, thick, px, em
+styles: dotted, dashed, solid, double, groove, ridge, inset
+outset, and none. Default is none
+color: self-explanitory
+border-side-[property]: (pick left, right, top, bottom etc for side) then give property
+                [width] [style] [color];
+border-radius: px
+*/
+
+/* Background
+background: color url("img/folder_name/pic_name.pic_type") img_alignment
+#(img alignment can have two values like top right center center etc.)
+background: linear-gradient(#(can use ##deg, 0%l-100%r and format is:
+color percentage, color percentage, end with close paren and semi-colon))
+*/

@@ -1,0 +1,39 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+main h1 {
+    margin-top: 1em;
+    margin-bottom: 1%;
+}
+
+main h2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+ main h3 {
+    margin-top: 1em;
+    margin-top: 0;
+ }
+
+div {
+    width: 10%;
+    height: 1.5em;
+}
+
+ .button {
+    background-color: #075b07e8;
+    color: white;
+    line-height: 1.5em;
+ }
+
+  .button :hover {
+    background-color: #075b07e8;
+    color: white;
+    font-weight: lighter;
+ }
+
+ .button :visited {
+    color: white;
+ }

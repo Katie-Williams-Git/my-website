@@ -4,33 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="../styles.css">
+    <meta name="description"
+        content="Port Orchard Seventh-day Adventist Church: Bringing hope and wholeness through the shared love of Jesus to our Kitsap Community and beyond. Join us in-person or online for worship on Saturday mornings. 10:00AM Bible Study, offering three adult classes studying the Sabbath School Quarterly and group worship starting at 11:00AM" />
+    <title>Port Orchard SDA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css" />
+    <script src="js/jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(funtion(){
+            $('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
+        });
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+    <header>
+        <div class="container">
+            <a href="index.html"><img src="/images/seventhdayadventistchurch.png"
+                    alt="The SDA church logo of an open bible with a flame of fire enveloped around a cross"
+                    id="logo"></a>
+        </div>
+        <div class="POSDA">
+            <h1>Port Orchard SDA</h1>
+        </div>
+    </header>
+    <nav id="mobile_menu"></nav>
     <nav id="nav_menu">
         <ul>
-            <li><a href="../index.html"><img src="/images/seventhdayadventistchurch.png" alt="The SDA church logo of an open bible with a flame of fire enveloped around a cross"></a></li>
-            <li><a href="../index.html">Home</a></li>
             <li><a href="About.html">About</a></li>
-                <ul>
-                    <li><a href="Ministiry-Kids_Kloset.html">Kids Kloset</a></li>
-                    <li><a href="About.html">Visiting</a></li>
-                </ul>
-            <li><a href="../Connect.html">Connect</a></li>
-            <li class="lastitem"><a href="../Giving.html">Giving</a></li>
+            <ul>
+                <li><a href="Ministiry-Kids_Kloset.html">Kids Kloset</a></li>
+                <li><a href="Visiting.html">Visiting</a></li>
+            </ul>
+            <li><a href="Connect.html">Connect</a></li>
+            <li class="lastitem"><a href="Giving.html">Giving</a></li>
         </ul>
     </nav>
     <main>
         <h2>Visit Us</h2>
         <section id="Top">
             <h3>Visiting</h3>
-            <p>We understand that visiting a church can be a daunting experience. Perhaps you haven’t been for awhile,
-                perhaps you’ve never been at all, perhaps you are just in town temporarily… Whatever your background,
-                come as you are and be accepted. The Port Orchard Seventh-day Adventist Church has the privilege of
-                welcoming first time visitors every Sabbath. We believe that you even thinking about visiting is
-                evidence that God is working in your life, and we want to help you connect with Him.
+            <p>We understand that visiting a church can be a daunting experience. Perhaps you haven’t been for 
+                awhile, perhaps you’ve never been at all, perhaps you are just in town temporarily… Whatever 
+                your background, come as you are and be accepted. The Port Orchard Seventh-day Adventist Church 
+                has the privilege of welcoming first time visitors every Sabbath. We believe that you even 
+                thinking about visiting is evidence that God is working in your life, and we want to help you 
+                connect with Him.
             </p>
         </section>
         <section id="Location">
@@ -78,15 +98,14 @@
                 friends.
             </p>
         </section>
-        <section>
-            <h3>Are you on Facebook?</h3>
-            <p>You can find our church's Facebook page by searching for Port Orchard Adventist Church or by clicking
-                <a href="https://www.facebook.com/search/top/?q=port%20orchard%20adventist%20church" target="_blank">this link</a>.
-            </p>
-        </section>
         <h2 id="Hope">Come Experience Hope</h2>
-        <a href="#">Back to Top</a>
     </main>
+    <main>
+        <h2>Ministries</h2>
+        <h3><a href="Ministiry-Kids_Kloset.html">Kids Kloset</a></h3>
+        <p>FREE-clothing and household items. Sizes from newborn through young adults. Run totally on donations.
+        </p>
+    </main> 
 </body>
 
 </html>

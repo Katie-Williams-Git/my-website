@@ -1,84 +1,154 @@
-<!-- I am a member of the POSDA church and was once asked to help build their website, 
- this document may well be used by them in the future. I am using a lot of the wording
+<!-- I am a member of the POSDA church and will soon be working with
+ the website developer to freshen up the current website, I am using a lot of the wording
  and formatting from the original website but plan to modify it more and more -->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description"
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
         content="Port Orchard Seventh-day Adventist Church: Bringing hope and wholeness through the shared love of Jesus to our Kitsap Community and beyond. Join us in-person or online for worship on Saturday mornings. 10:00AM Bible Study, offering three adult classes studying the Sabbath School Quarterly and group worship starting at 11:00AM" />
-        <title>Port Orchard SDA Church</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
+    <title>Port Orchard SDA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css" />
+    <script src="js/jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(funtion(){
+            $('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
+        });
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header> <!-- This is for the logo and text beside-->
+        <div class="container">
+            <a href="index.html"><img src="/images/seventhdayadventistchurch.png"
+                    alt="The SDA church logo of an open bible with a flame of fire enveloped around a cross"
+                    id="logo"></a>
+        </div>
+        <div class="POSDA">
+            <h1>Port Orchard SDA</h1>
+        </div>
+    </header>
+    <!-- The navigation menu -->
+    <nav id="mobile_menu"></nav>
     <nav id="nav_menu">
         <ul>
-            <li><a href="index.html"><img src="/images/seventhdayadventistchurch.png" alt="The SDA church logo of an open bible with a flame of fire enveloped around a cross"></a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="About/About.html">About</a></li>
-                <ul>
-                    <li><a href="About/Ministiry-Kids_Kloset.html">Kids Kloset</a></li>
-                    <li><a href="About/About.html">Visiting</a></li>
-                </ul>
+            <li><a href="About.html">About</a></li>
+            <ul>
+                <li><a href="Ministiry-Kids_Kloset.html">Kids Kloset</a></li>
+                <li><a href="Visiting.html">Visiting</a></li>
+            </ul>
             <li><a href="Connect.html">Connect</a></li>
             <li class="lastitem"><a href="Giving.html">Giving</a></li>
         </ul>
     </nav>
-         <main>
-            <h2>Bringing hope and wholeness through the shared love of Jesus to Kitsap County and beyond
-            </h2>
-            <h3>Join us in-person or Online
+    <!-- Main text -->
+    <main>
+        <h2>Bringing hope and wholeness to Kitsap County and beyond!
+        </h2>
+        <div class="imagecontainer">
+            <!-- Picture tilting left -->
+            <img src="images/Church_w_kids.jpg"
+                alt="Picture of the Sanctuary during VBS with children and leaders standing and singing"
+                class="bodyimg">
+            <h3 class="textright">We believe in the life-saving love of Jesus & desire to share it with <em>YOU!</em>
             </h3>
-            <img src="images/Church_w_kids.jpg">
-            <h3>
-                <strong>Saturday Morning Worship Service
-                </strong>
-            </h3>
-            <ul>
-                <li>
-                    <p>
-                        <strong>10:00AM</strong> 
-                        Small Group Bible study, offering three adult classes studying the Sabbath School Quarterly.
-                        Classes for Youth and Small Children available.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <strong>11:00AM</strong> Congregrational worship with prayers and praise music followed by a sermon given by Pastor 
-                        Baker or other guest speakers.
-                    </p>
-                </li>
-            </ul>
-            <p>To join us in-person, here is a google maps link with our address:
-                <address>
-                    <a href="https://maps.app.goo.gl/rvj8CAJYziUyrLAz7">5000 Bethel RD SE</a>, (across the street from the Port Orchard Fred
-                    Meyer.)
-                </address>
-            </p>
-            <p>To join us online, our Youtube channel is <a href="https://www.youtube.com/@PosdaOrg" target="_blank">Port Orchard Adventist Church</a> 
-            or @PosdaOrg. Sermons are live-streamed every Saturday starting at 11:00AM and recorded to the channel.
-            </p>
-            <p>
+        </div>
+        <div class="reverseimagecontainer">
+            <!-- Picture tilting right -->
+            <img src="images/bulletin_program.png" alt="Sample of the weekly program" class="imgright">
+            <div class="blocktext">
+                <h3 class="textleft">
+                    Please join us on-line or in person where we discuss biblical topics together to better understand
+                    the
+                    great
+                    love God has for us.
+                </h3>
                 <ul>
-                    <li>Click <a>here</a> to learn more about what our church believes.</li>
-                    <li>Click <a>here</a> to learn about our current pastor, <a>John Baker</a></li>
-                    <li>Click <a>here</a> to learn about community service programs our church is involved in like <a>Kids Kloset</a> or <a>Coffee Oasis</a></li>
-                    <li>Click <a>here</a> to learn more about upcoming events like <a>VBS</a> or ongoing <a>Bible Studies</a></li>
-                    <li>Click <a>here</a> to be directed to our global church's online giving portal</li>
+                    <li>
+                        <p class="textleft">
+                            <!-- Worship Schedule -->
+                            <strong>10:00AM</strong>
+                            We offer 3 different small-group bible studies geared for adults that follow an Adventist
+                            bible study guided known as a <a href="images/quarterly_cover.jpg" target="_blank"
+                                class="hover-image-link">Quarterly</a>. There are also weekly classes available
+                            for <a href="#child_classes">children</a>.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="textleft">
+                            <strong>11:00AM</strong> Congregrational worship with prayers and praise music followed by a
+                            sermon
+                            given by Pastor
+                            Baker or other guest speakers.
+                        </p>
+                    </li>
                 </ul>
+            </div>
+        </div>
+        <h3>Where?</h3>
+        <!-- Location info -->
+        <p>To join us in-person, here is a google maps link with our address:
+        <address>
+            <a href="https://maps.app.goo.gl/rvj8CAJYziUyrLAz7" target="_blank">
+                5000 Bethel RD SE</a>, (across the street from the Port
+            Orchard Fred
+            Meyer.)
+        </address>
+        </p>
+        <!-- Online info -->
+        <p>To join us online, our Youtube channel is <a href="https://www.youtube.com/@PosdaOrg" target="_blank">Port
+                Orchard Adventist Church</a>
+            or @PosdaOrg. Sermons are live-streamed every Saturday starting at 11:00AM and recorded to the channel.
+        </p>
+        <p>
+            <!-- Text to be added in later when I can link it all properly 
+            <ul>
+            <li>Click <a>here</a> to learn more about what our church believes.</li>
+            <li>Click <a>here</a> to learn about our current pastor, <a>John Baker</a></li>
+            <li>Click <a>here</a> to learn about community service programs our church is involved in like <a>Kids
+                    Kloset</a> or <a>Coffee Oasis</a></li>
+            <li>Click <a>here</a> to learn more about upcoming events like <a>VBS</a> or ongoing <a>Bible Studies</a>
+            </li>
+            <li>Click <a>here</a> to be directed to our global church's online giving portal</li>
+        </ul> -->
+        </p>
+        <h3>Children Classes</h3>
+        <ul id="child_classes">
+            <!-- img is going to be added with picture of sabbath school leaders -->
+            <li>
+                Cradle Roll <img>
+                <p>(Ages 0-5)</p>
+            </li>
+            <li>
+                Primary <img>
+                <p>(Ages 5-9)</p>
+            </li>
+            <li>
+                Juniors <img>
+                <p>(Ages 9-12)</p>
+            </li>
+            <li>
+                Youth <img>
+                <p>(Ages 12-17)</p>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <address>
+            <p>5000 Bethel RD SE</p>
+            <p>Port Orchard, WA 98367</p>
+            <p>To request a Pastoral Visit or for Special Prayer: call Pastor John Baker
+                at (731) 571-5138. Pastor John Baker’s regular/normal schedule in the
+                church office is on Tuesdays and Thursdays from 11:00am to 1:30pm.
             </p>
-        </main>
-        <footer>
-            <address>
-                <p>5000 Bethel RD SE</p>
-                <p>Port Orchard, WA 98367</p>
-                <p>To request a Pastoral Visit or for Special Prayer: call Pastor John Baker
-                    at (731) 571-5138. Pastor John Baker’s regular/normal schedule in the
-                    church office is on Tuesdays and Thursdays from 11:00am to 1:30pm.
-                </p>
-            </address>
-            &copy;<source><a href="https://portorchardsda.org" target="_blank">https://portorchardsda.org</a></source>
-        </footer>
-    </body>
+        </address>
+        &copy;
+        <source><a href="https://portorchardsda.org" target="_blank">https://portorchardsda.org</a></source>
+    </footer>
+</body>
+
 </html>
