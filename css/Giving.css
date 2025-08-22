@@ -22,18 +22,21 @@ div {
     height: 1.5em;
 }
 
- .button {
-    background-color: #075b07e8;
-    color: white;
-    line-height: 1.5em;
- }
-
-  .button :hover {
+  main a:hover {
     background-color: #075b07e8;
     color: white;
     font-weight: lighter;
  }
 
- .button :visited {
-    color: white;
+main a {
+   display: flex;
+   max-width: 100%;
+   max-height: 2em;
+   min-height: auto;
+   margin-top: 1%;
+}
+
+ i {
+   text-align: center;
+   align-items: center;
  }

@@ -1,29 +1,31 @@
-* {                        
+* {
     margin: 0%;
     padding: 0%;
 }
 
 Body {
-    color:#000080;
+    color: #000080;
     font-weight: 900;
     font-size: 1.15em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: rgb(236, 217, 171); 
-    background-image: linear-gradient(
-        to bottom, rgb(231, 205, 146) 0%, rgb(243, 226, 172) 7%,rgb(244, 231, 202) 36%, rgb(244, 231, 202) 95%, rgb(145, 132, 102) 100%);
+    background-image: linear-gradient(to bottom, rgb(231, 205, 146) 0%, rgb(244, 231, 202) 10%, rgb(244, 231, 202) 36%, rgb(244, 231, 202) 95%, rgb(145, 132, 102) 100%);
     border: thick ridge #8b4513;
     border-radius: 10px;
     border-right: 0;
-}   
+}
 
 header {
     display: grid;
     grid-template-columns: .5fr 3fr;
-    grid-gap: 16px;
-    grid-template-areas: 
-    "logo POSDA";
+    grid-gap: 1%;
+    grid-template-areas:
+        "logo POSDA";
     width: 100%;
-    margin: 2%;
+    margin: 1%;
+    font-family: "Edu QLD Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 
 /* For controlling the logo */
@@ -32,6 +34,7 @@ header .container {
     height: 95%;
     line-height: 25%;
 }
+
 /* For making the header text scale */
 header .POSDA {
     grid-area: POSDA;
@@ -42,18 +45,23 @@ header .POSDA {
     justify-content: center;
     align-items: center;
 }
+
 /* Separate logo adjustments */
 #logo {
     max-width: 25%;
     min-width: 75px;
     height: auto;
+    align-items: left;
+
 }
 
 /* CSS for function of the menu */
 #nav_menu ul {
     list-style-type: none;
-    position: relative;            /*So the submenu can be positioned */
+    position: relative;
+    /*So the submenu can be positioned */
 }
+
 #nav_menu ul li {
     float: left;
 }
@@ -63,6 +71,7 @@ header .POSDA {
     position: absolute;
     top: 100%;
 }
+
 #nav_menu ul ul li {
     float: none;
     position: relative;
@@ -78,11 +87,11 @@ header .POSDA {
     left: -100%;
 }
 
-#nav_menu ul li:hover > ul {
+#nav_menu ul li:hover>ul {
     display: block;
 }
 
-#nav_menu > ul::after {
+#nav_menu>ul::after {
     content: "";
     clear: both;
     display: block;
@@ -109,7 +118,8 @@ header .POSDA {
     width: 100%;
 }
 
-#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+#nav_menu ul li a:hover,
+#nav_menu ul li a:focus {
     font-weight: bolder;
 }
 
@@ -127,13 +137,9 @@ section {
     padding: none;
 }
 
-#mobile_menu { 
-    display: none; 
-}
-
 /* To help the main text be different from the header */
 main {
-    color:#000080;
+    color: #000080;
     font-weight: 200;
     font-size: 1.15em;
     margin: 2%;
@@ -190,6 +196,10 @@ main h2 {
     padding: 1%;
 }
 
+.blocktext ul {
+    list-style-type: none;
+}
+
 .textleft {
     flex-grow: 1;
     font-size: 1em;
@@ -201,28 +211,18 @@ main h2 {
 .textleft ul {
     list-style-type: none;
 }
-
-.hover-preview {
-  display: inside;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 20%;
-  height: auto;
-  z-index: 10;
-}
-
-.hover-image-link {
-  position: relative;
-  display: inline-block;
-}
-
-.hover-image-link:hover .hover-preview {
-  display: block;
-}
-
 #centerhope {
     text-align: center;
+}
+
+footer {
+    clear: both;
+    margin-top: 2%;
+    padding: 1%;
+    font-family: "Edu QLD Hand", cursive;
+    font-optical-sizing: small;
+    font-weight: 400;
+    font-style: normal;
 }
 
 @media only screen and (max-width: 2560px) {
@@ -230,35 +230,92 @@ main h2 {
         min-height: 75px;
 
     }
+
     header h1 {
         font-size: 250%;
     }
+
     #nav_menu {
         display: contents;
     }
+
     #mobile_menu {
         display: none;
     }
+
     .slicknav_menu {
-        background-color:rgb(79, 58, 5) !important;
+        background-color: rgb(79, 58, 5) !important;
     }
 }
 
-@media only screen and (max-width: 392px) {
+@media only screen and (max-width: 575px) {
     header img {
         min-height: 75px;
     }
+
     header h1 {
-        font-size: 150%;
+        font-size: 225%;
     }
+
     #nav_menu {
         display: center;
     }
+
     #mobile_menu {
         display: block;
     }
+
     .slicknav_menu {
-        background-color:rgb(79, 58, 5) !important;
+        background-color: rgb(79, 58, 5) !important;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    header img {
+        min-height: 75px;
+    }
+
+    header h1 {
+        font-size: 200%;
+    }
+
+    #nav_menu {
+        display: center;
+    }
+
+    #mobile_menu {
+        display: block;
+    }
+
+    .slicknav_menu {
+        background-color: rgb(79, 58, 5) !important;
+    }
+}
+
+@media only screen and (max-width: 473px) {
+    body {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    header img {
+        min-height: 75px;
+    }
+
+    header h1 {
+        font-size: 150%;
+    }
+
+    #nav_menu {
+        display: none;
+    }
+
+    #mobile_menu {
+        display: block;
+    }
+
+    .slicknav_menu {
+        background-color: rgb(79, 58, 5) !important;
     }
 }
 
@@ -267,17 +324,21 @@ main h2 {
     header img {
         min-height: 75px;
     }
+
     header h1 {
         font-size: 125%;
     }
+
     #nav_menu {
-        display: center;
+        display: none;
     }
+
     #mobile_menu {
         display: block;
     }
+
     .slicknav_menu {
-        background-color:rgb(79, 58, 5) !important;
+        background-color: rgb(79, 58, 5) !important;
     }
 }
 
